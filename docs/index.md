@@ -1,5 +1,5 @@
 # nnconvexity
-This package contains the documentation for ...
+This package contains the documentation for the [nnconvexity](https://pypi.org/project/nnconvexity/) Python package.
 
 We support two ways to compute convexity: 
 

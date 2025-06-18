@@ -42,12 +42,12 @@ def get_nearest_neighbors(
     """
     Find n nearest neighbors. For each node, its nearest neigbors are in rows of
     df (distances) and df_inc (incidence).
-    
+
     Arguments:
         df (pandas.DataFrame):     Distances between each pair of nodes
         n (int):      Number of nearest neighbors
         n_parallel (int):  Number of parallel jobs
-        
+
     Returns:
         pandas.DataFrame:    Only distances within n nearest neighbors are kept, the rest
                     is changed to 0
@@ -139,9 +139,9 @@ def compute_graph_convexity(
     Arguments:
         representations (np.ndarray): latent representations with shape (n_data, n_features)
         labels (np.ndarray): labels with shape (n_data,)
-        n_neighbors (int, default 10): number of nearest neighbors
-        max_n_paths (int, default 5000): maximum number of paths used for evaluation
-        n_parallel (int, default 1): number of parallel jobs
+        n_neighbors (int): number of nearest neighbors
+        max_n_paths (int): maximum number of paths used for evaluation
+        n_parallel (int): number of parallel jobs
 
     Returns:
         float: mean graph convexity over all paths

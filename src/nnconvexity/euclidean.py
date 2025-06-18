@@ -44,7 +44,7 @@ def euclidean_one_concept(
     Compute Euclidean convexity for one concept.
 
     Arguments:
-        representations (np.ndarray): latent representations with shape (n_data, n_tokens, n_features)
+        features (np.ndarray): latent representations with shape (n_data, n_tokens, n_features)
         indices (np.ndarray): indices of the points belonging to the concept
         label_id (int): label id of the concept known by the model
         predict_from_middle (function): function that takes features as input and returns predictions:
@@ -52,8 +52,8 @@ def euclidean_one_concept(
                                                 layer (int),
                                         output: predictions (shape n_interpolated data),
         layer (int): layer to compute Euclidean convexity for
-        n_pairs (int, default 5000): maximum number of pairs within a concept used for evaluation
-        n_sampled (int, default 10): number of points sampled on each segment
+        n_pairs (int): maximum number of pairs within a concept used for evaluation
+        n_sampled (int): number of points sampled on each segment
 
     Returns:
         List: list of Euclidean convexity scores for each pair of points
@@ -93,9 +93,9 @@ def compute_euclidean_convexity(
                                                 layer (int),
                                         output: predictions (shape n_interpolated data),
         layer (int): layer to compute Euclidean convexity for
-        n_pairs (int, default 5000): maximum number of pairs within a concept used for evaluation
-        n_sampled (int, default 10): number of points sampled on each segment
-        
+        n_pairs (int): maximum number of pairs within a concept used for evaluation
+        n_sampled (int): number of points sampled on each segment
+
     Returns:
         float: mean Euclidean convexity over all pairs
         Dict[int, float]: dictionary mapping concept label to Euclidean convexity of that concept
