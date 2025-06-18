@@ -1,0 +1,13 @@
+site_name: nnconvexity
+nav:
+  - Home: index.md
+theme: readthedocs
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]  # search src folder
+          options:
+            force_inspection: false
