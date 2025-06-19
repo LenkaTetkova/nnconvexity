@@ -41,19 +41,19 @@ def euclidean_one_concept(
     n_sampled: int = 10,
 ) -> List:
     """
-    Compute Euclidean convexity for one concept.
+    Compute Euclidean convexity scores for one concept.
 
     Arguments:
-        features (np.ndarray): latent representations with shape (n_data, n_tokens, n_features)
-        indices (np.ndarray): indices of the points belonging to the concept
-        label_id (int): label id of the concept known by the model
-        predict_from_middle (function): function that takes features as input and returns predictions:
-                                        inputs: features (shape (n_interpolated data, n_tokens, n_features)),
-                                                layer (int),
-                                        output: predictions (shape n_interpolated data),
-        layer (int): layer to compute Euclidean convexity for
-        n_pairs (int): maximum number of pairs within a concept used for evaluation
-        n_sampled (int): number of points sampled on each segment
+        features (np.ndarray): (n_data, n_tokens, n_features) Latent representations.
+        indices (np.ndarray): Indices of the points belonging to the concept.
+        label_id (int): Label id of the concept known by the model.
+        predict_from_middle (function): Function that takes features as input and returns predictions.
+                                        Inputs: features (shape (n_interpolated data, n_tokens, n_features)),
+                                                layer (int).
+                                        Output: predictions (shape n_interpolated data).
+        layer (int): Layer to compute Euclidean convexity for.
+        n_pairs (int): Maximum number of pairs within a concept used for evaluation.
+        n_sampled (int): Number of points sampled on each segment.
 
     Returns:
         List: list of Euclidean convexity scores for each pair of points
@@ -83,22 +83,22 @@ def compute_euclidean_convexity(
     n_sampled: int = 10,
 ) -> Tuple[float, Dict[int, float]]:
     """
-    Compute Euclidean convexity for given representations and labels.
+    Compute Euclidean convexity (in %) for given representations and labels.
 
     Arguments:
-        representations (np.ndarray): latent representations with shape (n_data, n_tokens, n_features)
-        labels (np.ndarray): labels with shape (n_data,)
-        predict_from_middle (function): function that takes features as input and returns predictions:
-                                        inputs: features (shape (n_interpolated data, n_tokens, n_features)),
-                                                layer (int),
-                                        output: predictions (shape n_interpolated data),
-        layer (int): layer to compute Euclidean convexity for
-        n_pairs (int): maximum number of pairs within a concept used for evaluation
-        n_sampled (int): number of points sampled on each segment
+        representations (np.ndarray): (n_data, n_tokens, n_features) Latent representations.
+        labels (np.ndarray): (n_data,) Labels.
+        predict_from_middle (function): Function that takes features as input and returns predictions.
+                                        Inputs: features (shape (n_interpolated data, n_tokens, n_features)),
+                                                layer (int).
+                                        Output: predictions (shape n_interpolated data).
+        layer (int): Layer to compute Euclidean convexity for.
+        n_pairs (int): Maximum number of pairs within a concept used for evaluation.
+        n_sampled (int): Number of points sampled on each segment.
 
     Returns:
-        float: mean Euclidean convexity over all pairs
-        Dict[int, float]: dictionary mapping concept label to Euclidean convexity of that concept
+        float: Mean Euclidean convexity (in %) over all pairs.
+        Dict[int, float]: Dictionary mapping concept label to Euclidean convexity (in %) of that concept.
     """
     convexity = {}
     individual_scores = []

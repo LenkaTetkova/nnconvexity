@@ -134,18 +134,18 @@ def compute_graph_convexity(
     float, Dict[int, float]
 ]:
     """
-    Compute graph convexity for given representations and labels.
+    Compute graph convexity (in %) for given representations and labels.
 
     Arguments:
-        representations (np.ndarray): latent representations with shape (n_data, n_features)
-        labels (np.ndarray): labels with shape (n_data,)
+        representations (np.ndarray): (n_data, n_features) latent representations
+        labels (np.ndarray): (n_data,) labels
         n_neighbors (int): number of nearest neighbors
         max_n_paths (int): maximum number of paths used for evaluation
         n_parallel (int): number of parallel jobs
 
     Returns:
-        float: mean graph convexity over all paths
-        Dict[int, float]: dictionary mapping concept label to graph convexity of that concept
+        float: mean graph convexity (in %) over all paths
+        Dict[int, float]: dictionary mapping concept label to graph convexity (in %) of that concept
     """
     # Create graph
     labels_set = set(labels)
