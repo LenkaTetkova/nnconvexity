@@ -6,7 +6,7 @@ T. S., and Hansen, L. K.: **On convex decision regions in deep network represent
 
 **Paper:** [https://arxiv.org/abs/2305.17154](https://arxiv.org/abs/2305.17154)
 
-**Documentation:** [https://github.com/LenkaTetkova/nnconvexity](https://github.com/LenkaTetkova/nnconvexity)
+**Documentation:** [https://nnconvexity.readthedocs.io/en/latest/](https://nnconvexity.readthedocs.io/en/latest/)
 
 **Source code:** [https://github.com/LenkaTetkova/nnconvexity](https://github.com/LenkaTetkova/nnconvexity)
 
