@@ -1,10 +1,9 @@
 # Convexity of representations
 This package contains methods to compute convexity scores to measure convexity of latent representations of neural networks as defined in
 
-Tětková, L., Brüsch, T., Dorszewski, T., Mager, F. M., Aagaard, R. Ø., Foldager, J., Alstrøm,
-T. S., and Hansen, L. K.: **On convex decision regions in deep network representations**. arXiv preprint arXiv:2305.17154, 2023.
+Tětková, L., Brüsch, T., Dorszewski, T. et al. On convex decision regions in deep network representations. Nat Commun 16, 5419 (2025). https://doi.org/10.1038/s41467-025-60809-y
 
-**Paper:** [https://arxiv.org/abs/2305.17154](https://arxiv.org/abs/2305.17154)
+**Paper:** [https://www.nature.com/articles/s41467-025-60809-y](https://www.nature.com/articles/s41467-025-60809-y)
 
 **Documentation:** [https://nnconvexity.readthedocs.io/en/latest/](https://nnconvexity.readthedocs.io/en/latest/)
 
