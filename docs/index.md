@@ -6,8 +6,8 @@ If you use our code, please cite the paper
 
 We support two ways to compute convexity: 
 
-- Euclidean using [nnconvexity.euclidean][]
-- graph using [nnconvexity.graph][]
+- Euclidean using [compute_euclidean_convexity][nnconvexity.euclidean.compute_euclidean_convexity]
+- graph using [compute_graph_convexity][nnconvexity.graph.compute_graph_convexity]
 
 
 ::: nnconvexity.euclidean.compute_euclidean_convexity
