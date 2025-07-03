@@ -18,7 +18,7 @@ exclude = [
 
 [project]
 name = "nnconvexity"
-version = "0.1.0"
+version = "0.1.1"
 description = "Package for analyzing the convexity of neural networks."
 classifiers = [
     "Development Status :: 3 - Alpha",
